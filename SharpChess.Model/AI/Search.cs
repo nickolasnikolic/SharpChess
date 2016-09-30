@@ -538,9 +538,9 @@ namespace SharpChess.Model.AI
 
                 legalMovesAttempted++;
 
-                if (bestMove == null)
+                if (bestMove == null) 
                 {
-                    bestMove = moveMade;
+                    bestMove = moveMade; //lower bound set here
                 }
 
                 if (Game.CaptureMoveAnalysisData)
